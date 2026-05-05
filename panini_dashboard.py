@@ -296,8 +296,8 @@ st.markdown('<div class="section-title">Detalle por misión</div>', unsafe_allow
 col_map = {
     "flag":"🌎","country":"País","warehouse_name":"Bodega","warehouse_id":"WH ID",
     "product_name":"Producto","store_reference_id":"Sync ID","picker_name":"Picker",
-    "status_name":"Estado","total_missions":"Misiones","total_quantity":"Cantidad",
-    "vivo_stock":"Stock Vivo","difference":"Diferencia",
+    "status_name":"Estado","total_missions":"Misiones","total_quantity":"Stock Nexus",
+    "vivo_stock":"Conteo Fisico","difference":"Diferencia",
 }
 started_col = "started_at_local" if "started_at_local" in df_f.columns else "started_at"
 col_map[started_col] = "Inicio"
