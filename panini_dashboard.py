@@ -15,12 +15,12 @@ st.set_page_config(
 # ── REDASH ────────────────────────────────────────────────────────────────────
 REDASH_BASE = "https://redash.rappi.com"
 QUERIES = {
-    "CO": {"id": 132892, "key": "JCVmRpIHwSh8nfweOTDF58dbRLCu91LhcELMc0Uy"},
-    "AR": {"id": 132897, "key": "CnUgQQxJEOK3EUDZBjFyRdoLFyX7K2MyjzN8REi0"},
-    "MX": {"id": 132988, "key": "PHEAUz7V0zuaHZx5r3uJ7nFfHi72bKmbRxOEo4a0"},
-    "PE": {"id": 132989, "key": "z7q7Mi8d87JQRioGNgrnv1mp5AYchwdFj26UpTYT"},
-    "BR": {"id": 132990, "key": "Sa4wt1B2jsiR0l7mjq5rX0v1Xh0cQzJZO5OmRiMQ"},
-    "CL": {"id": 132991, "key": "tCQiE9BrGV1Y4iTZOD7OKV0ozAY8mIEPajHyNhes"},
+    "CO": {"id": 132892, "key": st.secrets["redash"]["CO_KEY"]},
+    "AR": {"id": 132897, "key": st.secrets["redash"]["AR_KEY"]},
+    "MX": {"id": 132988, "key": st.secrets["redash"]["MX_KEY"]},
+    "PE": {"id": 132989, "key": st.secrets["redash"]["PE_KEY"]},
+    "BR": {"id": 132990, "key": st.secrets["redash"]["BR_KEY"]},
+    "CL": {"id": 132991, "key": st.secrets["redash"]["CL_KEY"]},
 }
 FLAGS = {"AR":"🇦🇷","BR":"🇧🇷","CL":"🇨🇱","CO":"🇨🇴","MX":"🇲🇽","PE":"🇵🇪"}
 COUNTRY_COLORS = {"CO":"#E8192C","AR":"#74AADB","MX":"#27AE60","BR":"#F39C12","PE":"#8E44AD","CL":"#E67E22"}
